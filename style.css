@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 @font-face {
-	font-family: 'Tetubin-Gothic';
-	src:url('Tetudin-Gothic.otf');
+	font-family: 'Tetsubin-Gothic';
+	src:url('Tetsubin-Gothic.otf')format('OpenType'),
+      url('Tetsubin-Gothic.ttf')format('TrueType');
 }
 
 header{
