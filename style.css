@@ -6,6 +6,12 @@
       url('Tetsubin-Gothic.ttf')format('TrueType');
 }
 
+body{
+  font: 14px/1.6 "Hiragino Kaku Gothic Pro","Tetubin-Gothic","Osaka","ƒƒCƒŠƒI","‚l‚r ‚oƒSƒVƒbƒN","MS PGothic",Verdana,Arial,sans-serif;
+  margin: 0;
+  color: #313131;
+}
+
 header{
   width: 80%;
   margin-left: 10%;
@@ -15,7 +21,6 @@ header{
 
 header p{
   color: #FFFFFF;
-  font-family: "Tetubin-Gothic"
   font-size: 140%;
   letter-spacing: 10px;
   line-height: 300px;
