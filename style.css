@@ -35,3 +35,7 @@ section{
     background-color: #ededed;
     overflow: hidden;
 }
+
+section.reference section.used-font{
+    line-height: 1.5;
+}
