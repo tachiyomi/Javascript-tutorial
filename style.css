@@ -2,15 +2,15 @@
 
 header{
   width: 80%;
-  margin-left: 0%;
+  margin-left: 10%;
   background-color: #313131;
   overflow: hidden;
 }
 
 header p{
   color: #FFFFFF;
-  font-size: 120%;
+  font-size: 140%;
   letter-spacing: 10px;
   line-height: 300px;
-  padding-left: 3%;
+  padding-left: 8%;
 }
