@@ -20,6 +20,11 @@ header{
   overflow: hidden;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px
+}
 header p{
   color: #FFFFFF;
   font-size: 120%;
