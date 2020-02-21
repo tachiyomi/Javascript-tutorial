@@ -14,8 +14,7 @@ body{
 
 header{
   width: 80%;
-  margin-top: 2%;
-  margin-left: 10%;
+  margin: 2% 10%;
   background-color: #313131;
   overflow: hidden;
 }
@@ -38,8 +37,7 @@ header p{
 section{
   width: 80%;
   padding-left: 1%;
-  margin-top: 2%;
-  margin-left: 10%;
+  margin: 1.5% 8%;
   background-color: #ededed;
   overflow: hidden;
 }
