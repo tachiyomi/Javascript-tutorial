@@ -30,6 +30,7 @@ header p{
 
 section{
   width: 80%;
+  padding-left: 1%;
   margin-top: 2%;
   margin-left: 10%;
   background-color: #ededed;
@@ -37,7 +38,7 @@ section{
 }
 
 section p{
-  padding-left: 3%;
+  padding-left: 1%;
 }
 
 section.reference,section.used-font{
