@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+	font-family: 'Tetubin-Gothic';
+	src:url('Tetudin-Gothic.otf');
+}
+
 header{
   width: 80%;
   margin-left: 10%;
@@ -9,8 +14,9 @@ header{
 
 header p{
   color: #FFFFFF;
+  font-family: "Tetubin-Gothic"
   font-size: 140%;
   letter-spacing: 10px;
   line-height: 300px;
-  padding-left: 8%;
+  padding-left: 6%;
 }
