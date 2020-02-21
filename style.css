@@ -21,8 +21,15 @@ header{
 
 header p{
   color: #FFFFFF;
-  font-size: 140%;
-  letter-spacing: 10px;
+  font-size: 120%;
+  letter-spacing: 8px;
   line-height: 300px;
   padding-left: 6%;
+}
+
+section{
+    width: 80%;
+    margin-left: 10%;
+    background-color: #ededed;
+    overflow: hidden;
 }
