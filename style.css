@@ -21,10 +21,11 @@ header{
 }
 
 img {
-  max-width: 100%;
+  max-width: 10%;
   height: auto;
-  border-radius: 3px
+  border-radius: 5px
 }
+
 header p{
   color: #FFFFFF;
   font-size: 120%;
