@@ -29,13 +29,17 @@ header p{
 }
 
 section{
-    width: 80%;
-    margin-top: 2%;
-    margin-left: 10%;
-    background-color: #ededed;
-    overflow: hidden;
+  width: 80%;
+  margin-top: 2%;
+  margin-left: 10%;
+  background-color: #ededed;
+  overflow: hidden;
+}
+
+section.p{
+  padding-left: 3%;
 }
 
 section.reference section.used-font{
-    line-height: 1.0;
+  line-height: 80%;
 }
