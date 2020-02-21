@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+header{
+  width: 60%;
+  margin-left: 20%;
+  background-color: #313131;
+  overflow: hidden;
+}
+
+header p{
+  color: #FFFFFF;
+  font-size: 120%;
+  letter-spacing: 10px;
+  line-height: 300px;
+  padding-left: 3%;
+}
