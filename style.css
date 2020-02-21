@@ -36,10 +36,10 @@ section{
   overflow: hidden;
 }
 
-section.p{
+section p{
   padding-left: 3%;
 }
 
-section.reference section.used-font{
+section.reference,section.used-font{
   line-height: 80%;
 }
