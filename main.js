@@ -1,10 +1,10 @@
 function over(){
   document.getElementsByTagName('p').visibility = visible;
-  document.getElementsByTagName('img')..opacity = 0.6;
+  document.getElementsByTagName('img').opacity = 0.6;
 
 }
 
 function out(){
   document.getElementsByTagName('p').visibility = hidden;
-  document.getElementsByTagName('img')..opacity = 1.0;
+  document.getElementsByTagName('img').opacity = 1.0;
 }
