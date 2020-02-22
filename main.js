@@ -7,7 +7,7 @@ $.ajax({
         text: 'Hello',
         source: 'en',
         target: 'ja',
-        callback: 'true';
+        callback: true
     },
     success: out => {
         alert(out.message);
