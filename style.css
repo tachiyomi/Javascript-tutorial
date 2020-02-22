@@ -23,7 +23,7 @@ img {
 }
 
 header{
-	padding: 2% 0%;
+	margin: 2% 0%;
 	background-color: #313131;
   overflow: hidden;
 }
@@ -32,7 +32,7 @@ header p{
   color: #FFFFFF;
   font-size: 120%;
   letter-spacing: 8px;
-  line-height: 300px;
+  line-height: 200px;
   padding-left: 6%;
 }
 
@@ -50,11 +50,10 @@ nav ul{
 }
 
 nav li{
-	width: 50%;
+	width: calc(40% - 2px);
 	border-left: 2px solid #313131;
 	text-align: center;
 	float: left;
-	display: inline;
 }
 
 nav li:last-child{
@@ -65,7 +64,6 @@ nav a{
 	display: block;
 	text-decoration: none;
 	color: #313131;
-	font-weight: 400;
 	line-height: 45px;
 }
 
