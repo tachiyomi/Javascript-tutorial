@@ -32,14 +32,13 @@ header{
 header p{
   color: #FFFFFF;
 	font-family: "Banana Slip",sans-serif;
-  font-size: 120%;
+  font-size: 130%;
   letter-spacing: 8px;
   line-height: 200px;
   padding-left: 6%;
 }
 
 nav{
-	font-family: "Banana Slip",sans-serif;
 	border-top: 2px solid #313131;
 	border-bottom: 2px solid #313131;
 	overflow: hidden;
@@ -47,6 +46,7 @@ nav{
 
 nav ul{
 	width: 90%;
+	margin: 0%;
 	list-style-type: none;
 }
 
