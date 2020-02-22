@@ -1,5 +1,5 @@
 function over(){
-  document.getElementsByTagName('p').visibility = "visible";
+  document.getElementsByTagName('p').visibility = "hidden";
   document.getElementsByTagName('img').opacity = 0.6;
 
 }
