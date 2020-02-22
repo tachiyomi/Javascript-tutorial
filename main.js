@@ -1,14 +1,3 @@
-function over(doc){
-  doc.getElementsByTagName('p')[0].style.visibility = "visible";
-  doc.getElementsByTagName('img')[0].style.opacity = 0.3;
-
-}
-
-function out(doc){
-  doc.getElementsByTagName('p')[0].style.visibility = "hidden";
-  doc.getElementsByTagName('img')[0].style.opacity = 1.0;
-}
-
 const button = document.getElementById('btn');
 const before = document.getElementById('before');
 const after = document.getElementById('after');
@@ -21,5 +10,6 @@ button.addEventListener('click', () => {
     .then(Json => {
         // imgタグに取得したURL画像を入れる
         after.innerText = Json['text'];
+        button.innerText = "受信済み";
     });
 });
