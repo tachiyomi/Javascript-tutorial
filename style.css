@@ -30,6 +30,17 @@ nav ul{
 	margin-left: 20%;
 }
 
+nav li{
+	width: calc(50%-2px);
+	border-left: 1px solid #2d2dda;
+	text-align: center;
+	float: left;
+}
+
+nav li:last-child{
+	border-right: 1px solid #2d2dda;
+}
+
 header{
 	color: #313131;
   overflow: hidden;
