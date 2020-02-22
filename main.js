@@ -10,6 +10,7 @@ button.addEventListener('click', () => {
     .then(Json => {
         // imgタグに取得したURL画像を入れる
         after.innerText = Json["text"];
+        before.innerText = "変換済み";
         button.innerText = "受信済み";
     });
     button.innerText = "受信なし";
