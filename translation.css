@@ -70,6 +70,11 @@ section{
   overflow: hidden;
 }
 
+.translation button{
+  width: 100%;
+  margin: 1% 0%;
+}
+
 .translation ul{
 	width: 90%;
 	margin: 0%;
@@ -79,7 +84,7 @@ section{
 
 .translation li{
   display: block;
-	width: calc(50% - 4px);
+	width: calc(45% - 4px);
 	border: 2px solid #313131;
 	text-align: center;
 	float: left;
