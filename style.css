@@ -39,12 +39,12 @@ header p{
 nav{
 	border-top: 2px solid #313131;
 	border-bottom: 2px solid #313131;
-	margin-bottom: 5px;
 	overflow: hidden;
 }
 
 nav ul{
 	width: 80%;
+	margin: 0%;
 	margin-left: 10%;
 	list-style-type: none;
 }
