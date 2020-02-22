@@ -10,7 +10,7 @@ button.addEventListener('click', () => {
   .then(function(response){
     return response.json();
   }).then(function(json){
-    after.innerText = json.text;
+    after.innerText = json['text'];
   });
   /*
     fetch('https://script.google.com/macros/s/AKfycbxvNsIJiFYAaZJLMX9zWGlOWMa-LUaBKHBKoqf_6eP3Ie_XUq0/exec?text=Hello&source=en&target=ja') // APIのURL
