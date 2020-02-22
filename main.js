@@ -1,7 +1,10 @@
-function over(x){
-  x.style.opacity = 0.6;
+function over(){
+  document.getElementsByTagName('p').visibility = visible;
+  document.getElementsByTagName('img')..opacity = 0.6;
+
 }
 
-function out(x){
-  x.style.opacity = 1.0;
+function out(){
+  document.getElementsByTagName('p').visibility = hidden;
+  document.getElementsByTagName('img')..opacity = 1.0;
 }
