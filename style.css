@@ -12,7 +12,7 @@
 }
 
 body{
-  font: 18px/1.6 "Tetsubin Gothic","Banana Slip","Hiragino Kaku Gothic Pro","Osaka",Verdana,Arial,sans-serif;
+  font: 18px/1.2 "Tetsubin Gothic","Hiragino Kaku Gothic Pro","Osaka",Verdana,Arial,sans-serif;
 	width: 80%;
 	margin: 0% 10%;
 }
@@ -31,6 +31,7 @@ header{
 
 header p{
   color: #FFFFFF;
+	font-family: "Banana Slip",sans-serif;
   font-size: 120%;
   letter-spacing: 8px;
   line-height: 200px;
@@ -38,6 +39,7 @@ header p{
 }
 
 nav{
+	font-family: "Banana Slip",sans-serif;
 	border-top: 2px solid #313131;
 	border-bottom: 2px solid #313131;
 	overflow: hidden;
@@ -45,7 +47,6 @@ nav{
 
 nav ul{
 	width: 90%;
-	margin: 0% 5%;
 	list-style-type: none;
 }
 
@@ -69,7 +70,7 @@ nav a{
 
 section{
   padding: 0% 2%;
-  margin: 1.5% 0%;
+  margin: 1% 0%;
   background-color: #ededed;
   border-radius: 2%;
   overflow: hidden;
