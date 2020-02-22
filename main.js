@@ -3,6 +3,12 @@ $.ajax({
     type: 'GET',
     url: endpoint,
     dataType: 'jsonp',
+    data: {
+        text: 'Hello'
+        source: 'en'
+        target: 'ja'
+        callback: true;
+    },
     success: out => {
         alert(out.message);
     }
