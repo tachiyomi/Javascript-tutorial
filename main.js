@@ -9,6 +9,6 @@ $.ajax({
         target: 'ja',
     },
     success: response => {
-        alert(response.text);
+        alert("OK");
     }
 });
