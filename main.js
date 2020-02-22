@@ -1,5 +1,5 @@
 function over(x){
-  x.style.opacity = 0.8;
+  x.style.opacity = 0.6;
 }
 
 function out(x){
