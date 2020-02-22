@@ -3,14 +3,11 @@ const before = document.getElementById('before');
 const after = document.getElementById('after');
 // ボタンをクリックしたらイベント発動
 button.addEventListener('click', () => {
-  var req = new Request('https://script.google.com/macros/s/AKfycbxvNsIJiFYAaZJLMX9zWGlOWMa-LUaBKHBKoqf_6eP3Ie_XUq0/exec?text=Hello&source=en&target=ja');
-
-  fetch(req).then(function(response){
-    if (response.ok) {
-        button.innerText = "受信済み";
-        //console.log(response.url); //レスポンスのURL
-        //console.log(response.status); //レスポンスのHTTPステータスコード
-    }
+  fetch('https://script.google.com/macros/s/AKfycbxvNsIJiFYAaZJLMX9zWGlOWMa-LUaBKHBKoqf_6eP3Ie_XUq0/exec?text=Hello&source=en&target=ja')
+  .then(response => {
+    return response.text();
+  }).then(body =>{
+    after.innerText = body;
   });
   /*
     fetch('https://script.google.com/macros/s/AKfycbxvNsIJiFYAaZJLMX9zWGlOWMa-LUaBKHBKoqf_6eP3Ie_XUq0/exec?text=Hello&source=en&target=ja') // APIのURL
