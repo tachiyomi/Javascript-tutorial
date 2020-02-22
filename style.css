@@ -2,8 +2,8 @@
 
 @font-face {
 	font-family: 'Tetsubin-Gothic';
-	src:url('Tetsubin-Gothic.otf')format('OpenType'),
-      url('Tetsubin-Gothic.ttf')format('TrueType');
+	src:url('/Tetsubin-Gothic.otf') format('OpenType'),
+      url('/Tetsubin-Gothic.ttf') format('TrueType');
 }
 @font-face {
 	font-family: 'Banana-Slip';
