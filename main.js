@@ -11,7 +11,7 @@ button.addEventListener('click', () => {
   		jsonp: 'callback',
       jsonpCallback: 'jsonpTestCallback',
       data: {
-          text: 'Hello',
+          text: before.innerText,
           sourse: 'en',
           target: 'ja'
       },
