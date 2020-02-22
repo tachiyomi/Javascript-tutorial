@@ -1,27 +1,9 @@
-const button = document.getElementById('btn');
-const before = document.getElementById('before');
-const after = document.getElementById('after');
-// ボタンをクリックしたらイベント発動
-button.addEventListener('click', () => {
-  fetch('https://script.google.com/macros/s/AKfycbxvNsIJiFYAaZJLMX9zWGlOWMa-LUaBKHBKoqf_6eP3Ie_XUq0/exec?text=Hello&source=en&target=ja&callback=call',
-  {
-    mode: 'cors'
-  })
-  .then(function(response){
-    return response.json();
-  }).then(function(json){
-    after.innerText = json['text'];
-  });
-  /*
-    fetch('https://script.google.com/macros/s/AKfycbxvNsIJiFYAaZJLMX9zWGlOWMa-LUaBKHBKoqf_6eP3Ie_XUq0/exec?text=Hello&source=en&target=ja') // APIのURL
-    .then(function(response) => {
-        return response.json();
-    })
-    .then(function(myJson){
-        after.innerText = myJson["text"];
-        before.innerText = "変換済み";
-        button.innerText = "受信済み";
-    });
-    button.innerText = "受信なし";
-  */
+const endpoint = "https://script.google.com/macros/s/AKfycbzZtvOvf14TaMdRIYzocRcf3mktzGgXvlFvyczo/exec?text=Hello&source=en&target=ja";
+$.ajax({
+    type: 'GET',
+    url: endpoint,
+    dataType: 'jsonp',
+    success: out => {
+        alert(out.message);
+    }
 });
