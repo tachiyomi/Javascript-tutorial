@@ -2,12 +2,12 @@
 
 @font-face {
 	font-family: "Tetsubin-Gothic";
-	src:url("/Tetsubin-Gothic.otf") format("OpenType"),
-      url("/Tetsubin-Gothic.ttf") format("TrueType");
+	src:url("/Tetsubin-Gothic.otf") format("opentype"),
+      url("/Tetsubin-Gothic.ttf") format("truetype");
 }
 @font-face {
 	font-family: "Banana-Slip";
-	src:url("/Banana-Slip.otf") format("OpenType");
+	src:url("/Banana-Slip.otf") format("tpentype");
 }
 
 body{
@@ -44,8 +44,7 @@ nav{
 
 nav ul{
 	width: 80%;
-	margin: 0%;
-	margin-left: 10%;
+	margin: 0% 0% 0% 10%;
 	list-style-type: none;
 }
 
