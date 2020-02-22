@@ -23,8 +23,18 @@ img {
   border-radius: 8px;
 }
 
+div.photo{
+	position: relative;
+}
+
 div.photo p{
-	text-align: center;
+	color: #ffffff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
 }
 
 header{
@@ -34,7 +44,7 @@ header{
 }
 
 header p{
-  color: #FFFFFF;
+  color: #ffffff;
 	font-family: "Banana Slip",sans-serif;
   font-size: 130%;
   letter-spacing: 8px;
