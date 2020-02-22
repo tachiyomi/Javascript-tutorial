@@ -13,6 +13,9 @@ button.addEventListener('click', () => {
       },
       success: response => {
         button.innerText = "OK";
+      },
+      error: function(data) {
+        button.innerText = "NO";
       }
   });
 });
