@@ -12,7 +12,7 @@ button.addEventListener('click', () => {
           text: 'Hello'
       },
       success: response => {
-          alert("OK");
+        button.innerText = "OK";
       }
   });
 });
