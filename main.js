@@ -12,4 +12,5 @@ button.addEventListener('click', () => {
         after.innerText = Json['text'];
         button.innerText = "受信済み";
     });
+    button.innerText = "受信なし";
 });
