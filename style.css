@@ -9,8 +9,7 @@
 body{
   font: 14px/1.6 "Tetubin-Gothic","Hiragino Kaku Gothic Pro","Osaka",Verdana,Arial,sans-serif;
 	width: 80%;
-	margin: 2% 10%;
-  color: #313131;
+	margin: 0% 10%;
 }
 
 img {
@@ -32,6 +31,7 @@ nav ul{
 }
 
 header{
+	color: #313131;
   overflow: hidden;
 }
 
@@ -48,8 +48,8 @@ section{
   padding-left: 1%;
   margin: 1.5% 10%;
   background-color: #ededed;
+  border-radius: 5px 100px / 500px;
   overflow: hidden;
-  border-radius: 10% 50% / 30%;
 }
 
 section p{
