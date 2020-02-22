@@ -78,6 +78,7 @@ section{
 }
 
 .translation li{
+  display: block;
 	width: calc(50% - 4px);
 	border: 2px solid #313131;
 	text-align: center;
