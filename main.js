@@ -4,9 +4,7 @@ $.ajax({
     url: endpoint,
     dataType: 'jsonp',
     data: {
-        text: 'Hello',
-        source: 'en',
-        target: 'ja',
+        text: 'Hello'
     },
     success: response => {
         alert("OK");
