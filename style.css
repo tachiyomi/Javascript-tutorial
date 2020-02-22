@@ -30,6 +30,7 @@ div.photo{
 div.photo p{
 	visibility: hidden;
 	font-size: 150%;
+	text-align: right;
 	color: #000000;
 	position: absolute;
 	top: 50%;
