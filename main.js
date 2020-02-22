@@ -14,7 +14,7 @@ button.addEventListener('click', () => {
       success: response => {
         button.innerText = "OK";
       },
-      error: function(data) {
+      error: response => {
         button.innerText = "NO";
       }
   });
