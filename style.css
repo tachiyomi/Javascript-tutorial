@@ -72,7 +72,7 @@ header p{
 section{
   width: 100%;
   padding: 2%;
-  margin: 1.5% 10%;
+  margin: 2% 0%;
   background-color: #ededed;
   border-radius: 2%;
   overflow: hidden;
@@ -83,5 +83,6 @@ section p{
 }
 
 section.reference,section.used-font{
+	padding: -10%;
   line-height: 80%;
 }
