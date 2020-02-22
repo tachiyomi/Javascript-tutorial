@@ -7,23 +7,32 @@
 }
 
 body{
-  font: 14px/1.6 "Tetubin-Gothic","Hiragino Kaku Gothic Pro","Osaka","メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;
-  margin:0;
+  font: 14px/1.6 "Tetubin-Gothic","Hiragino Kaku Gothic Pro","Osaka",Verdana,Arial,sans-serif;
+	width: 80%;
+	margin: 2% 10%;
   color: #313131;
-}
-
-header{
-  width: 80%;
-  margin: 2% 10%;
-  background-color: #313131;
-  overflow: hidden;
 }
 
 img {
   margin: 2%;
   max-width: 90%;
   height: auto;
-  border-radius: 8px
+  border-radius: 8px;
+}
+
+nav{
+	border-top: 1px solid #2d2dda;
+	border-bottom: 1px solid #2d2dda;
+	overflow: hidden;
+}
+
+nav ul{
+	width: 60%;
+	margin-left: 20%;
+}
+
+header{
+  overflow: hidden;
 }
 
 header p{
@@ -40,7 +49,7 @@ section{
   margin: 1.5% 10%;
   background-color: #ededed;
   overflow: hidden;
-  border-radius: 6%;
+  border-radius: 10% 50% / 30%;
 }
 
 section p{
