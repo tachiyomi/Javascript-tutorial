@@ -20,8 +20,10 @@ img {
 }
 
 nav{
+	width: 100%;
 	border-top: 1px solid #2d2dda;
 	border-bottom: 1px solid #2d2dda;
+	margin-bottom: 5px;
 	overflow: hidden;
 }
 
@@ -41,7 +43,16 @@ nav li:last-child{
 	border-right: 1px solid #2d2dda;
 }
 
+nav a{
+	display: block;
+	text-decoration: none;
+	color: #313131;
+	font-weight: 400;
+	line-height: 45px;
+}
+
 header{
+	width: 100%;
 	color: #313131;
   overflow: hidden;
 }
@@ -59,7 +70,7 @@ section{
   padding-left: 1%;
   margin: 1.5% 10%;
   background-color: #ededed;
-  border-radius: 5px 100px / 500px;
+  border-radius: 2%;
   overflow: hidden;
 }
 
