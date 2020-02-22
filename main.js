@@ -6,8 +6,9 @@ button.addEventListener('click', () => {
   fetch('https://script.google.com/macros/s/AKfycbxvNsIJiFYAaZJLMX9zWGlOWMa-LUaBKHBKoqf_6eP3Ie_XUq0/exec?text=Hello&source=en&target=ja')
   .then(function(response){
     if (response.ok) {
-        console.log(response.url); //レスポンスのURL
-        console.log(response.status); //レスポンスのHTTPステータスコード
+        button.innerText = "受信済み";
+        //console.log(response.url); //レスポンスのURL
+        //console.log(response.status); //レスポンスのHTTPステータスコード
     }
   });
   /*
