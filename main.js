@@ -3,6 +3,8 @@ $.ajax({
     type: 'GET',
     url: endpoint,
     dataType: 'jsonp',
+		jsonp: 'callback',
+    jsonpCallback: 'jsonpTestCallback',
     data: {
         text: 'Hello'
     },
