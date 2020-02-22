@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
 @font-face {
-	font-family: 'Tetsubin-Gothic';
-	src:url('/Tetsubin-Gothic.otf') format('OpenType'),
-      url('/Tetsubin-Gothic.ttf') format('TrueType');
+	font-family: "Tetsubin-Gothic";
+	src:url("/Tetsubin-Gothic.otf") format("OpenType"),
+      url("/Tetsubin-Gothic.ttf") format("TrueType");
 }
 @font-face {
-	font-family: 'Banana-Slip';
-	src:url('/Banana-Slip.otf') format('OpenType');
+	font-family: "Banana-Slip";
+	src:url("/Banana-Slip.otf") format("OpenType");
 }
 
 body{
@@ -20,6 +20,20 @@ img {
   max-width: 90%;
   height: auto;
   border-radius: 8px;
+}
+
+header{
+	padding: 2% 0%;
+	background-color: #313131;
+  overflow: hidden;
+}
+
+header p{
+  color: #FFFFFF;
+  font-size: 120%;
+  letter-spacing: 8px;
+  line-height: 300px;
+  padding-left: 6%;
 }
 
 nav{
@@ -39,6 +53,7 @@ nav li{
 	width: 50%;
 	border-left: 2px solid #313131;
 	text-align: center;
+	float: left;
 	display: inline;
 }
 
@@ -54,19 +69,6 @@ nav a{
 	line-height: 45px;
 }
 
-header{
-	background-color: #313131;
-  overflow: hidden;
-}
-
-header p{
-  color: #FFFFFF;
-  font-size: 120%;
-  letter-spacing: 8px;
-  line-height: 300px;
-  padding-left: 6%;
-}
-
 section{
   padding: 0% 2%;
   margin: 2% 0%;
@@ -80,6 +82,5 @@ section p{
 }
 
 section.reference,section.used-font{
-	padding: -10%;
-  line-height: 80%;
+  line-height: 60%;
 }
