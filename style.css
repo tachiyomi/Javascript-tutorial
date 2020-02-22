@@ -7,7 +7,7 @@
 }
 @font-face {
 	font-family: 'Banana-Slip';
-	src:url('Banana-Slip.otf')format('OpenType'),
+	src:url('/Banana-Slip.otf')format('OpenType');
 }
 
 body{
@@ -70,8 +70,8 @@ header p{
 }
 
 section{
-  width: 80%;
-  padding-left: 1%;
+  width: 100%;
+  padding: 2%;
   margin: 1.5% 10%;
   background-color: #ededed;
   border-radius: 2%;
