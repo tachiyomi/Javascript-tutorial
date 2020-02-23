@@ -44,7 +44,7 @@ document.addEventListener('keydown',function(e){
   if(event.ctrlKey){
     if(e.KeyCode === 13)
     translation();
-    return false;
     button.innerText = "PRESS";
+    return false;
   }
 })
