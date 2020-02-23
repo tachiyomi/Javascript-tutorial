@@ -16,6 +16,9 @@ function out(doc){
   const after = document.getElementById('after');
 
 function translation(){
+  var beforeOption = before.getElementsByTagName('select').selectedIndex;
+  var afterOption = after.getElementsByTagName('select').selectedIndex;
+
   $.ajax({
       type: 'GET',
       url: endpoint,
@@ -24,8 +27,8 @@ function translation(){
       jsonpCallback: 'jsonpTestCallback',
       data: {
           text: before.getElementsByTagName('textarea').value,
-          sourse: before.getElementsByTagName('select').options[before.getElementsByTagName('select').selectedIndex].value,
-          target: after.getElementsByTagName('select').options[after.getElementsByTagName('select').selectedIndex].value
+          sourse: before.getElementsByTagName('select').options[beforeOption].value,
+          target: after.getElementsByTagName('select').options[afterOption].value
       },
       success: response => {
         after.getElementsByTagName('textarea').value = response.text;
