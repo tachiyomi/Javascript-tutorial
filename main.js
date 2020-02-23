@@ -13,8 +13,8 @@ function out(doc){
   const button = document.getElementById('btn');
 
 function translation(){
-  const beforeOption = document.getElementById('before').getElementsByTagName('select').value;
-  const afterOption = document.getElementById('after').getElementsByTagName('select').value;
+  const beforeOption = document.getElementById('before').getElementsByTagName('select')[0].selectedIndex;
+  const afterOption = document.getElementById('after').getElementsByTagName('select')[0].selectedIndex;
 
   $.ajax({
       type: 'GET',
@@ -24,8 +24,8 @@ function translation(){
       jsonpCallback: 'jsonpCallback',
       data: {
           text: before.getElementsByTagName('textarea')[0].value,
-          sourse: before.getElementsByTagName('select')[0].options[0].value,
-          target: after.getElementsByTagName('select')[0].options[1].value
+          sourse: before.getElementsByTagName('select')[0].options[beforeOption].value,
+          target: after.getElementsByTagName('select')[0].options[afterOption].value
       },
       success: response => {
         after.getElementsByTagName('textarea')[0].value = response.text;
@@ -34,7 +34,6 @@ function translation(){
         after.getElementsByTagName('textarea')[0].value = "error:404";
       }
   });
-  button.innerText = beforeOption;
 }
 
 button.addEventListener('click',translation,false);
