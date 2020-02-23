@@ -22,15 +22,15 @@ button.addEventListener('click', () => {
   		jsonp: 'callback',
       jsonpCallback: 'jsonpTestCallback',
       data: {
-          text: before.innerText,
+          text: before.value,
           sourse: 'en',
           target: 'ja'
       },
       success: response => {
-        after.innerText = response.text;
+        after.value = response.text;
       },
       error: response => {
-        after.innerText = "error:404";
+        after.value = "error:404";
       }
   });
 });
