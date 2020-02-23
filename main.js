@@ -9,13 +9,13 @@ function out(doc){
   doc.getElementsByTagName('img')[0].style.opacity = 1.0;
 }
 
-function translation(){
   const endpoint = "https://script.google.com/macros/s/AKfycbxvNsIJiFYAaZJLMX9zWGlOWMa-LUaBKHBKoqf_6eP3Ie_XUq0/exec";
 
   const button = document.getElementById('btn');
   const before = document.getElementById('before');
   const after = document.getElementById('after');
 
+function translation(){
   $.ajax({
       type: 'GET',
       url: endpoint,
