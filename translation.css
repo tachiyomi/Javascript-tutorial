@@ -94,3 +94,7 @@ section{
 	float: left;
   background-color: #f6f5f5;
 }
+
+.translation textarea{
+	width: 100%;
+}
