@@ -39,7 +39,7 @@ function translation(){
   });
 }
 
-button.addEventListener('click',translation());
+button.addEventListener('click',translation,false);
 document.addEventListener('keydown',function(e){
   if(event.ctrlKey){
     if(e.KeyCode === 13)
