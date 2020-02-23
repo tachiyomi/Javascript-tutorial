@@ -31,7 +31,7 @@ function translation(){
           target: after.getElementsByTagName('select').value
       },
       success: response => {
-        after.getElementsByTagName('textarea').value = response.text;
+        after.getElementsByTagName('textarea').value = "success:200";
       },
       error: response => {
         after.getElementsByTagName('textarea').value = "error:404";
