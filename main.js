@@ -40,13 +40,11 @@ function translation(){
 }
 
 button.addEventListener('click',translation,false);
-document.addEventListener('keydown',function(e){
-  $(window).keydown(function(e){
-    if(event.ctrlKey){
-      if(e.keyCode === 13){
-        translation();
-        return false;
-      }
+$(window).keydown(function(e){
+  if(event.ctrlKey){
+    if(e.keyCode === 13){
+      translation();
+      return false;
     }
-  });
-})
+  }
+});
