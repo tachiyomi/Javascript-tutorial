@@ -16,8 +16,8 @@ function out(doc){
   const after = document.getElementById('after');
 
 function translation(){
-  var beforeOption = before.getElementsByTagName('select').selectedIndex;
-  var afterOption = after.getElementsByTagName('select').selectedIndex;
+  const beforeOption = before.getElementsByTagName('select').selectedIndex;
+  const afterOption = after.getElementsByTagName('select').selectedIndex;
 
   $.ajax({
       type: 'GET',
