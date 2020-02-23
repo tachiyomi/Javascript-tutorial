@@ -26,18 +26,18 @@ function translation(){
   		jsonp: 'callback',
       jsonpCallback: 'jsonpTestCallback',
       data: {
-          text: before.getElementsByTagName('textarea').value,
-          sourse: before.getElementsByTagName('select').value,
-          target: after.getElementsByTagName('select').value
+          text: before.getElementsByTagName('textarea')[0].value,
+          sourse: before.getElementsByTagName('select')[0].value,
+          target: after.getElementsByTagName('select')[0].value
       },
       success: response => {
-        after.getElementsByTagName('textarea').value = "success:200";
+        after.getElementsByTagName('textarea')[0].value = "success:200";
       },
       error: response => {
-        after.getElementsByTagName('textarea').value = "error:404";
+        after.getElementsByTagName('textarea')[0].value = "error:404";
       }
   });
-  button.innerText = before.getElementsByTagName('textarea').value;
+  button.innerText = before.getElementsByTagName('textarea')[0].value;
 }
 
 button.addEventListener('click',translation());
