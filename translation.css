@@ -96,5 +96,10 @@ section{
 }
 
 .translation textarea{
-	width: 100%;
+	font-family: inherit;
+	font-size: 100%;
+	width: inherit;
+	height: inherit;
+	background-color: #f6f5f5;
+	border-color: #313131;
 }
