@@ -41,7 +41,7 @@ function translation(){
 
 button.addEventListener('click',translation,false);
 document.addEventListener('keydown',function(e){
-  if(e.KeyCode === 17 && e.KeyCode === 13){
+  if(e.CtrlKey){
     translation();
     return false;
   }
