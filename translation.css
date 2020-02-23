@@ -77,8 +77,9 @@ section{
 
 .translation button{
 	font-family: inherit;
+	font-size: 100%;
   width: 80%;
-  height: 400%;
+  height: 35px;
   margin: 1% 10%;
   background-color: #ffffff;
 }
@@ -110,8 +111,8 @@ section{
 
 .translation div textarea{
 	font: 20px/1.2 "Tetsubin Gothic","Gabia Solmee","Hiragino Kaku Gothic Pro","Osaka",Verdana,Arial,sans-serif;
-	font-size: 100%;
-	width: calc(100% - 2px);
+	padding: 2%;
+	width: calc(96% - 2px);
   height: 200px;
 	margin: 0%;
 	background-color: #f6f5f5;
