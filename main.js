@@ -41,10 +41,8 @@ function translation(){
 
 button.addEventListener('click',translation,false);
 document.addEventListener('keydown',function(e){
-  if(e.KeyCode === 17){
-    //if(e.KeyCode === 13)
+  if(e.KeyCode === 17 && e.KeyCode === 13){
     translation();
-    button.innerText = "PRESS";
     return false;
   }
 })
