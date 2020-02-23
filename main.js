@@ -11,10 +11,11 @@ function out(doc){
   const endpoint = "https://script.google.com/macros/s/AKfycbxvNsIJiFYAaZJLMX9zWGlOWMa-LUaBKHBKoqf_6eP3Ie_XUq0/exec";
 
   const button = document.getElementById('btn');
+
+function translation(){
   const before = document.getElementById('before');
   const after = document.getElementById('after');
 
-function translation(){
   const beforeOption = before.getElementsByTagName('select').value;
   const afterOption = after.getElementsByTagName('select').value;
 
