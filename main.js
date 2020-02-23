@@ -13,22 +13,19 @@ function out(doc){
   const button = document.getElementById('btn');
 
 function translation(){
-  const before = document.getElementById('before');
-  const after = document.getElementById('after');
-
-  const beforeOption = before.getElementsByTagName('select').selectedIndex;
-  const afterOption = after.getElementsByTagName('select').selectedIndex;
+  const beforeOption = document.getElementById('before').getElementsByTagName('select').selectedIndex;
+  const afterOption = document.getElementById('after').getElementsByTagName('select').selectedIndex;
 
   $.ajax({
       type: 'GET',
       url: endpoint,
       dataType: 'jsonp',
   		jsonp: 'callback',
-      jsonpCallback: 'jsonpTestCallback',
+      jsonpCallback: 'jsonpCallback',
       data: {
           text: before.getElementsByTagName('textarea')[0].value,
-          sourse: before.getElementsByTagName('select')[0].options[0].value,
-          target: after.getElementsByTagName('select')[0].options[1].value
+          sourse: before.getElementsByTagName('select')[0].options[beforeOption].value,
+          target: after.getElementsByTagName('select')[0].options[afterOption].value
       },
       success: response => {
         after.getElementsByTagName('textarea')[0].value = response.text;
@@ -40,11 +37,11 @@ function translation(){
 }
 
 button.addEventListener('click',translation,false);
-$(window).keydown(function(e){
-  if(event.ctrlKey){
-    if(e.keyCode === 13){
-      translation();
-      return false;
+window.addEventListener('keydown',function(e){
+    if(event.ctrlKey){
+      if(e.keyCode === 13){
+        translation();
+        return false;
+      }
     }
-  }
-});
+})
