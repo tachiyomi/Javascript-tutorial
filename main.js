@@ -13,8 +13,8 @@ function out(doc){
   const button = document.getElementById('btn');
 
 function translation(){
-  const beforeOption = document.getElementById('before').getElementsByTagName('select').selectedIndex;
-  const afterOption = document.getElementById('after').getElementsByTagName('select').selectedIndex;
+  const beforeOption = document.getElementById('before').getElementsByTagName('select').value;
+  const afterOption = document.getElementById('after').getElementsByTagName('select').value;
 
   $.ajax({
       type: 'GET',
