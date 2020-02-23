@@ -20,8 +20,23 @@
     <section class="translation">
       <button id='btn'>翻訳</button>
       <ul>
-        <li><textarea  id='before'>Hello. I am Tachiyomi. (example text)</textarea></li>
-        <li><textarea  id='after'></textarea></li>
+        <div  id='before'>
+        <li>
+          <select>
+            <option value="ja" selected>日本語</option>
+            <option value="en">英語</option>
+            <option value="ko">韓国語</option>
+          <select>
+          <textarea>こんにちは。私はたちよみです. (例文)</textarea>
+        </li>
+        <li>
+          <select>
+            <option value="ja">日本語</option>
+            <option value="en" selected>英語</option>
+            <option value="ko">韓国語</option>
+          <select>
+          <textarea  id='after'></textarea>
+        </li>
       </ul>
     </section>
     <script src="main.js"></script>
