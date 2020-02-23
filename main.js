@@ -27,8 +27,8 @@ function translation(){
       jsonpCallback: 'jsonpTestCallback',
       data: {
           text: before.getElementsByTagName('textarea')[0].value,
-          sourse: before.getElementsByTagName('select')[0].options[0].value,
-          target: after.getElementsByTagName('select')[0].options[1].value
+          sourse: before.getElementsByTagName('select')[0].options[beforeOption].value,
+          target: after.getElementsByTagName('select')[0].options[afterOption].value
       },
       success: response => {
         after.getElementsByTagName('textarea')[0].value = response.text;
@@ -46,4 +46,5 @@ document.addEventListener('keydown',function(e){
     translation();
     return false;
   }
+  button.innerText = "PRESS";
 })
