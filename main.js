@@ -45,6 +45,6 @@ document.addEventListener('keydown',function(e){
     if(e.KeyCode === 13)
     translation();
     return false;
+    button.innerText = "PRESS";
   }
-  button.innerText = "PRESS";
 })
