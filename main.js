@@ -1,7 +1,6 @@
 function over(doc){
   doc.getElementsByTagName('p')[0].style.visibility = "visible";
   doc.getElementsByTagName('img')[0].style.opacity = 0.3;
-
 }
 
 function out(doc){
@@ -16,8 +15,8 @@ function out(doc){
   const after = document.getElementById('after');
 
 function translation(){
-  //const beforeOption = before.getElementsByTagName('select').value;
-  //const afterOption = after.getElementsByTagName('select').value;
+  const beforeOption = before.getElementsByTagName('select').value;
+  const afterOption = after.getElementsByTagName('select').value;
 
   $.ajax({
       type: 'GET',
@@ -27,8 +26,8 @@ function translation(){
       jsonpCallback: 'jsonpTestCallback',
       data: {
           text: before.getElementsByTagName('textarea')[0].value,
-          sourse: before.getElementsByTagName('select')[0].value,
-          target: after.getElementsByTagName('select')[0].value
+          sourse: before.getElementsByTagName('select')[beforeOption].value,
+          target: after.getElementsByTagName('select')[afterOption].value
       },
       success: response => {
         after.getElementsByTagName('textarea')[0].value = response.text;
