@@ -27,8 +27,8 @@ function translation(){
       jsonpCallback: 'jsonpTestCallback',
       data: {
           text: before.getElementsByTagName('textarea').value,
-          sourse: before.getElementsByTagName('select').options[beforeOption].value,
-          target: after.getElementsByTagName('select').options[afterOption].value
+          sourse: before.getElementsByTagName('select').options[0].value,
+          target: after.getElementsByTagName('select').options[1].value
       },
       success: response => {
         after.getElementsByTagName('textarea').value = response.text;
