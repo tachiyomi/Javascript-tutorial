@@ -31,13 +31,12 @@ function translation(){
           target: after.getElementsByTagName('select')[0].value
       },
       success: response => {
-        after.getElementsByTagName('textarea')[0].value = "success:200";
+        after.getElementsByTagName('textarea')[0].value = response.text;
       },
       error: response => {
         after.getElementsByTagName('textarea')[0].value = "error:404";
       }
   });
-  button.innerText = before.getElementsByTagName('textarea')[0].value;
 }
 
 button.addEventListener('click',translation());
