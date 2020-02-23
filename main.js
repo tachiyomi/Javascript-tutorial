@@ -9,15 +9,6 @@ function out(doc){
   doc.getElementsByTagName('img')[0].style.opacity = 1.0;
 }
 
-button.addEventListener('click',translation());
-document.addEventListener('keydown',(event)=>{
-  if(event.ctrlKey){
-    if(e.KeyCode === 13)
-    translation();
-    return false;
-  }
-})
-
 function translation(){
   const endpoint = "https://script.google.com/macros/s/AKfycbxvNsIJiFYAaZJLMX9zWGlOWMa-LUaBKHBKoqf_6eP3Ie_XUq0/exec";
 
@@ -32,15 +23,24 @@ function translation(){
   		jsonp: 'callback',
       jsonpCallback: 'jsonpTestCallback',
       data: {
-          text: before.value,
-          sourse: 'en',
-          target: 'ja'
+          text: before.getElementsByTagName('textarea').value,
+          sourse: before.getElementsByTagName('select').options[before.getElementsByTagName('select').selectedIndex].value,
+          target: after.getElementsByTagName('select').options[after.getElementsByTagName('select').selectedIndex].value
       },
       success: response => {
-        after.value = response.text;
+        after.getElementsByTagName('textarea').value = response.text;
       },
       error: response => {
-        after.value = "error:404";
+        after.getElementsByTagName('textarea').value = "error:404";
       }
   });
 }
+
+button.addEventListener('click',translation());
+document.addEventListener('keydown',function(e){
+  if(event.ctrlKey){
+    if(e.KeyCode === 13)
+    translation();
+    return false;
+  }
+})
