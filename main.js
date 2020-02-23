@@ -37,7 +37,7 @@ function translation(){
         after.getElementsByTagName('textarea').value = "error:404";
       }
   });
-  button.innerText = "finish";
+  button.innerText = before.getElementsByTagName('textarea').value;
 }
 
 button.addEventListener('click',translation());
