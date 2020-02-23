@@ -109,7 +109,7 @@ section{
 }
 
 .translation div textarea{
-	font-family: "Tetsubin Gothic","Gabia Solmee","Hiragino Kaku Gothic Pro","Osaka",Verdana,Arial,sans-serif;;
+	font-family: 20px/1.2 "Tetsubin Gothic","Gabia Solmee","Hiragino Kaku Gothic Pro","Osaka",Verdana,Arial,sans-serif;
 	font-size: 100%;
 	width: calc(100% - 2px);
   height: 200px;
