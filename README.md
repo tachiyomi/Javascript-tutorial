@@ -1,1 +1,1 @@
-# Javascript_tutorial.github.io
+# Javascript-tutorial
