@@ -31,7 +31,7 @@ function translation(){
         after.getElementsByTagName('textarea')[0].value = response.text;
       },
       error: response => {
-        after.getElementsByTagName('textarea')[0].value = "error:404";
+        after.getElementsByTagName('textarea')[0].value = "error:404<br>Please try a different browser.";
       }
   });
 }
